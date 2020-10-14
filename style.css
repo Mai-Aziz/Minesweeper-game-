@@ -1,0 +1,104 @@
+body {
+  background: #e7e6e7;
+}
+
+body main {
+  max-width: 210px;
+  border: 1px solid #bebbbb;
+  -webkit-box-shadow: 1px 1px white;
+          box-shadow: 1px 1px white;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 10px;
+  background-color: #c9c7c7;
+}
+
+body main .controls {
+  background-color: #bbb9b9;
+  width: 95%;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  text-align: center;
+  border: 1px solid #b9b9b9 .5;
+  -webkit-box-shadow: 2px 2px #e6e2e2;
+          box-shadow: 2px 2px #e6e2e2;
+  -webkit-box-ordinal-group: 2;
+      -ms-flex-order: 1;
+          order: 1;
+}
+
+body main .controls .user-display {
+  text-align: center;
+  color: #db0808;
+  font-size: 20px;
+  border: 1px solid #797978;
+  -webkit-box-shadow: 1px 1px white;
+          box-shadow: 1px 1px white;
+  display: inline-block;
+  width: 25%;
+  background-color: #292929;
+  margin: 5px;
+}
+
+body main .controls .button {
+  display: inline-block;
+  cursor: pointer;
+  outline: none;
+  color: #666;
+  background-color: black;
+  border: none;
+  -webkit-box-shadow: 1px 1px white;
+          box-shadow: 1px 1px white;
+  background: url("assets/face.png");
+  margin-bottom: 5px;
+  margin-top: 5px;
+  width: 50px;
+  height: 50px;
+  border: 1px solid #d6d6d2;
+}
+
+body main .controls .button:hover {
+  background-color: #e0e08b;
+}
+
+body main .controls .button:active {
+  background-color: #e0e08b;
+  -webkit-transform: translateY(4px);
+          transform: translateY(4px);
+}
+
+body main .board {
+  width: 198px;
+  height: 198px;
+  margin: 5px;
+  border: 1px solid #b4b4b4;
+  -webkit-box-ordinal-group: 3;
+      -ms-flex-order: 2;
+          order: 2;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+body main .board .cell {
+  float: left;
+  width: 20px;
+  height: 20px;
+  background-image: radial-gradient(#e6e6e6, #c9c7c7);
+  border: 1px solid #e0e0e0;
+  -webkit-box-shadow: 1px 1px white .7;
+          box-shadow: 1px 1px white .7;
+  font-size: 20px;
+  text-align: center;
+  display: table-cell;
+  vertical-align: middle;
+  line-height: 20px;
+}
+/*# sourceMappingURL=style.css.map */

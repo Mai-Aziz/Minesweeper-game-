@@ -1,0 +1,82 @@
+body {
+    background: rgb(231, 230, 231);
+
+    main {
+        max-width: 210px;
+        border: 1px solid #bebbbb;
+        box-shadow: 1px 1px white;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+        background-color:#c9c7c7 ;
+
+    .controls {
+        background-color:#bbb9b9 ;
+        width: 95%;;
+        align-self: center;
+        text-align: center;
+        border: 1px solid #b9b9b9 .5;
+        box-shadow: 2px 2px #e6e2e2;
+        order: 1;
+
+        .user-display {
+            text-align: center;
+            color: rgb(219, 8, 8);
+            font-size: 20px;
+            border: 1px solid rgb(121, 121, 120);
+            box-shadow: 1px 1px white;
+            display: inline-block;
+            width: 25%;
+            background-color: rgb(41, 41, 41);
+            margin: 5px;
+        }
+
+        .button {
+            display: inline-block;
+            cursor: pointer;
+                outline: none;
+                color: #666;
+                background-color: rgb(0, 0, 0);
+                border: none;
+                box-shadow: 1px 1px white;
+                background: url("assets/face.png");
+                margin-bottom: 5px;
+                margin-top: 5px;
+                width: 50px;
+                height: 50px;
+                border: 1px solid rgb(214, 214, 210) ;
+            &:hover {
+                background-color: rgb(224, 224, 139);
+            }
+            &:active {
+                background-color: rgb(224, 224, 139);
+                transform: translateY(4px);
+            }
+        }
+    }
+
+    .board {
+        width: 198px;
+        height: 198px;
+        margin: 5px;
+        border: 1px solid #b4b4b4;
+        order: 2;
+        align-self: center;
+
+        .cell {
+            float: left;
+            width: 20px;
+            height: 20px;
+            background-image:radial-gradient(#e6e6e6,#c9c7c7);
+            border: 1px solid rgb(224, 224, 224);
+            box-shadow: 1px 1px white .7;
+            font-size:20px;
+            text-align:center;
+            display: table-cell;
+            vertical-align:middle;
+            line-height: 20px;
+            }
+        }
+    }
+}
